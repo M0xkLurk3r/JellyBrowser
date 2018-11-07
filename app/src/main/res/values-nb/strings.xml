@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Nettleser</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Ny fane</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Inkognito-fane</string>

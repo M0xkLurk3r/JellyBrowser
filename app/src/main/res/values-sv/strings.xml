@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Webbläsare</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Ny flik</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Inkognito-flik</string>

@@ -30,9 +30,11 @@ import android.provider.BaseColumns;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
+import org.lineageos.jelly.BuildConfig;
+
 public class HistoryProvider extends ContentProvider {
     public interface Columns extends BaseColumns {
-        String AUTHORITY = "org.lineageos.jelly.history";
+        String AUTHORITY = BuildConfig.DEBUG ? "org.lineageos.jelly.debug.history" : "org.lineageos.jelly.history";
         Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/history");
 
         String TITLE = "title";

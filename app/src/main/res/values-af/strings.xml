@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Blaaier</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Nuwe oortjie</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Incognito oortjie</string>

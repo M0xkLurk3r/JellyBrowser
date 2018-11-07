@@ -30,9 +30,11 @@ import android.provider.BaseColumns;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
+import org.lineageos.jelly.BuildConfig;
+
 public class FavoriteProvider extends ContentProvider {
     public interface Columns extends BaseColumns {
-        String AUTHORITY = "org.lineageos.jelly.favorite";
+        String AUTHORITY = BuildConfig.DEBUG ? "org.lineageos.jelly.debug.favorite" : "org.lineageos.jelly.favorite";
         Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/favorite");
 
         String TITLE = "title";

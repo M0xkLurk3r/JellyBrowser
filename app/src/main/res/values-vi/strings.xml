@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Trình duyệt</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Tab mới</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Tab ẩn danh</string>

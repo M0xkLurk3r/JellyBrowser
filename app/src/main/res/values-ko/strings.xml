@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">브라우저</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">새 탭</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">시크릿 탭</string>

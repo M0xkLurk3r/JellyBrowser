@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">ブラウザ</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">新しいタブ</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">シークレットタブ</string>

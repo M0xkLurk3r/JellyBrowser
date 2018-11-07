@@ -27,6 +27,7 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
 
+import org.lineageos.jelly.BuildConfig;
 import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.PrefsUtils;
 import org.lineageos.jelly.utils.UrlUtils;
@@ -102,6 +103,11 @@ public class WebViewExt extends WebView {
         getSettings().setDatabaseEnabled(!mIncognito);
         getSettings().setDomStorageEnabled(!mIncognito);
         getSettings().setAppCachePath(mActivity.getDir("appcache", Context.MODE_PRIVATE).getPath());
+
+        if (BuildConfig.DEBUG) {
+            Log.i(TAG, "Enable inspect from adb bridge, uses chrome://inspect in PC chrome to debug this webview instance.");
+            setWebContentsDebuggingEnabled(true);
+        }
 
         setOnLongClickListener(new OnLongClickListener() {
             boolean shouldAllowDownload;

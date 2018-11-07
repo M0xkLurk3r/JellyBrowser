@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Browser</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Neuer Tab</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Privater Tab</string>

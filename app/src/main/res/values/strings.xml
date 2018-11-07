@@ -14,9 +14,16 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">Browser</string>
 
     <!-- Menu action: create new tab -->
+    <string name="app_name_debug">Jelly Browser(Debug)</string>
+    <string name="app_name_release">Jelly Browser</string>
+    <string name="JELLY_PROVIDER.debug">org.lineageos.jelly.debug.fileprovider</string>
+    <string name="JELLY_PROVIDER.release">org.lineageos.jelly.fileprovider</string>
+    <string name="JELLY_FAVORITE.debug">org.lineageos.jelly.debug.favorite</string>
+    <string name="JELLY_FAVORITE.release">org.lineageos.jelly.favorite</string>
+    <string name="JELLY_HISTORY.debug">org.lineageos.jelly.debug.history</string>
+    <string name="JELLY_HISTORY.release">org.lineageos.jelly.history</string>
     <string name="menu_new_tab">New tab</string>
     <!-- Menu action: create new incognito tab -->
     <string name="menu_incognito">Incognito tab</string>

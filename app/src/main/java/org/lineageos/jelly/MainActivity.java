@@ -92,7 +92,7 @@ import java.lang.ref.WeakReference;
 public class MainActivity extends WebViewExtActivity implements
          SearchBarController.OnCancelListener {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String PROVIDER = "org.lineageos.jelly.fileprovider";
+//    private static final String PROVIDER = ;
     private static final String EXTRA_INCOGNITO = "extra_incognito";
     private static final String EXTRA_DESKTOP_MODE = "extra_desktop_mode";
     public static final String EXTRA_URL = "extra_url";
@@ -441,7 +441,7 @@ public class MainActivity extends WebViewExtActivity implements
                 out.flush();
                 out.close();
                 intent.putExtra(Intent.EXTRA_STREAM,
-                        FileProvider.getUriForFile(this, PROVIDER, file));
+                        FileProvider.getUriForFile(this, getResources().getString(R.string.JELLY_PROVIDER), file));
                 intent.setType("image/png");
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
             } catch (IOException e) {

@@ -88,7 +88,7 @@
 
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="org.lineageos.jelly.fileprovider"
+            android:authorities="@string/JELLY_PROVIDER"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -98,12 +98,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="org.lineageos.jelly.favorite"
+            android:authorities="@string/JELLY_FAVORITE"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="org.lineageos.jelly.history"
+            android:authorities="@string/JELLY_HISTORY"
             android:exported="false" />
 
         <meta-data

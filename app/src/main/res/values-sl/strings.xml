@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Brskalnik</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Nov zavihek</string>
   <!-- Menu action: create new incognito tab -->
   <string name="menu_incognito">Zavihek brez belež. zgod.</string>

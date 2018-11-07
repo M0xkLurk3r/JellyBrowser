@@ -15,8 +15,7 @@
      limitations under the License.
 -->
 <resources>
-  <string name="app_name">Restolador</string>
-  <!-- Menu action: create new tab -->
+    <!-- Menu action: create new tab -->
   <string name="menu_new_tab">Llingüeta nueva</string>
   <!-- Menu action: create new incognito tab -->
   <!-- Menu action: reload current page -->
