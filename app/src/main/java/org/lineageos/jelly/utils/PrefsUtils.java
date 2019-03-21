@@ -85,6 +85,11 @@ public final class PrefsUtils {
         return prefs.getBoolean(KEY_DO_NOT_TRACK, false);
     }
 
+    public static boolean getIsAllowInspect(Context context) {
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return preferences.getBoolean("allow_inspect", false);
+    }
+
     public static SuggestionProviderType getSuggestionProvider(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         try {

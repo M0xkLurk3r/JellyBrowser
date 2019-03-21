@@ -26,6 +26,7 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import org.lineageos.jelly.ui.UrlBarController;
 import org.lineageos.jelly.utils.PrefsUtils;
@@ -102,6 +103,11 @@ public class WebViewExt extends WebView {
         getSettings().setDatabaseEnabled(!mIncognito);
         getSettings().setDomStorageEnabled(!mIncognito);
         getSettings().setAppCachePath(mActivity.getDir("appcache", Context.MODE_PRIVATE).getPath());
+
+        if (PrefsUtils.getIsAllowInspect(getContext())) {
+            Toast.makeText(getContext(), "Hint: allow debugging in this instance", Toast.LENGTH_LONG).show();
+            setWebContentsDebuggingEnabled(true);
+        }
 
         setOnLongClickListener(new OnLongClickListener() {
             boolean shouldAllowDownload;

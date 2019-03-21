@@ -92,4 +92,14 @@
             android:key="key_cookie_clear"
             android:title="@string/pref_cookie_clear" />
     </PreferenceCategory>
+    <PreferenceCategory
+        android:key="category_addon"
+        android:title="Developing" >
+        <SwitchPreference
+            android:defaultValue="0"
+            android:key="allow_inspect"
+            android:summary="Allow Chrome Desktop to inspect this WebView instance for debug usage"
+            android:title="Allow Inspect"
+            />
+    </PreferenceCategory>
 </PreferenceScreen>
